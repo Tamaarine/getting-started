@@ -1,0 +1,29 @@
+Dockerfile
+
+A Dockerfile is just a text based script that instructs Docker how to make a container image
+
+Directives
+
+1. CMD is the default command to run when starting a container from an image
+
+2. -t flag when running docker build gives output image a human readbable name 
+
+3. -d flag tells docker to run the new container in "Detached" mode means run it in the background 
+
+4. -p flag tells docker to create a mapping from hostPort:containerPort, without it container's port wouldn't be accessible
+
+
+
+
+Useful Commands
+
+docker system prune -a -> For cleaning up container, networks, images, build caches
+
+docker volumes prune -> Clean up unused volumes
+
+Named volume are great if we want to store data
+
+Bind mounts are used to persist data, but more often it is used as a shared folder kind of mechanics
+
+like nodemon in node.js 
+
